@@ -10,17 +10,15 @@ y_train = ["positive","positive","positive","positive","negative","negative","ne
 # Tokenize
 # "I am a python dev" -> ["I", "am", "a", "python", "dev"]  
 from nltk.tokenize import RegexpTokenizer
+from nltk.stem.porter import PorterStemmer
+from nltk.corpus import stopwords
 # NLTK -> Tokenize -> RegexpTokenizer
 # Stemming
 # "Playing" -> "Play"
 # "Working" -> "Work"
-from nltk.stem.porter import PorterStemmer
 # NLTK -> Stem -> Porter -> PorterStemmer
-from nltk.corpus import stopwords
 # NLTK -> Corpus -> stopwords
-from nltk.stem.porter import PorterStemmer
 # NLTK -> Stem -> Porter -> PorterStemmer
-from nltk.corpus import stopwords
 # NLTK -> Corpus -> stopwords
 tokenizer = RegexpTokenizer(r"\w+")
 en_stopwords = set(stopwords.words('english'))
